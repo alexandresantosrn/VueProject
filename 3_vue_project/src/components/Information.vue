@@ -9,18 +9,26 @@
             <li>Python</li>
         </ul>  
         <p v-show="mostrar_email">Mande uma mensagem para: {{ email }}.</p>
+        <p>Para acessar meu portfólio <a v-bind:href ="meu_link" target="_blank">basta clicar aqui</a></p>
         <p v-if=" 4 > 2">Testando.</p>    
-    </div>
+        <Picture />
+    </div>  
 </template>
 
 <script>
+import Picture from './Picture.vue';
+
 export default {
     name: 'Information',
+    components: {
+        Picture
+    },
     data() {
         return {
             esta_trabalhando: false,
             mostrar_email: true,
-            email: 'alex@google.com'
+            email: 'alex@google.com',
+            meu_link: 'https://google.com'
         }
     } 
 }
