@@ -20,3 +20,18 @@ export default {
   }
 }
 </script>
+
+<style>
+body {
+  background-color: #333;
+  color: #fff;
+}
+
+a{
+  color: red;
+}
+
+.teste {
+  background-color: black;
+}
+</style>
