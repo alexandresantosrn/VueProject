@@ -37,7 +37,7 @@ export default {
 
             const name = this.name;
             const email = this.email;
-            
+
             console.log("Formulário enviado.")
             console.log("O nome é:" + name)
             console.log("O e-mail é:" + email)
