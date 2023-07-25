@@ -16,6 +16,7 @@ export default {
     ul {
         list-style: none;
         display: flex;
+        background: #999;
     }
 
     li {
@@ -31,8 +32,5 @@ export default {
     a:hover {
         color: turquoise;
     }
-
-
-
 </style>>
 
