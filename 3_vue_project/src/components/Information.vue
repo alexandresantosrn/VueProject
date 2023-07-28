@@ -1,5 +1,6 @@
 <template>
     <div>
+        <p>{{ compEmail }}</p>
         <p v v-if="esta_trabalhando">Estou trabalhando no momento.</p>
         <p v-else>Estou em busca de novas oportunidades!</p>
         <p>Utilizo as seguintes tecnologias para back-end:</p>
@@ -56,6 +57,9 @@ export default {
                 this.textoBotao = 'Esconder E-mail'
             }
         }
-    } 
+    },
+    props: {
+        compEmail: String
+    }
 }
 </script>
